@@ -4,8 +4,8 @@
   "description": "myanmar-character-map",
   "main": "index.js",
   "engines": {
-	"node": "15.x",
-	"npm": "6.x"
+    "node": "15.x",
+    "npm": "6.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/nyinyizaw-nav/character-map/issues"
   },
-  "homepage": "https://github.com/nyinyizaw-nav/character-map#readme"
+  "homepage": "https://github.com/nyinyizaw-nav/character-map#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
