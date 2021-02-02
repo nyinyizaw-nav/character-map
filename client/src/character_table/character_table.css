@@ -20,10 +20,18 @@
 	font-family: 'zawgyi';
 }
 
-.char {
-	border: 2px red solid;
-	width: 2em;
+h2 {
+	border: red 2px solid;
 	text-align: center;
+}
+
+.char {
+	width: 4em;
+	text-align: center;
+	margin-right: 0.6em;
+	margin-top: 0.6em;
+	background: #566e5c;
+	color: white;
 }
 
 .chartable {

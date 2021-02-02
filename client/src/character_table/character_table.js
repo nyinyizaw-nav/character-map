@@ -12,12 +12,24 @@ let mmChar = () => {
 
 function PrintMmChar() {
 	return (
-	<>	
+	<>
+		<h2>Pyidaungsu Font</h2>
 	<div className="chartable pyidaungsu">
-		{mmChar().map((c) => <div className="char">{c}</div>)}
+		{mmChar().map((c, index) => (
+			<div className= "char">
+			<div>{index + 0x1000}</div>
+			<div>{c}</div>
+			</div>
+		))}
 	</div>	
+		<h2>ZawGyi Font</h2>
 	<div className="chartable zawgyi">
-		{mmChar().map((c) => <div className="char">{c}</div>)}
+		{mmChar().map((c, index) => (
+			<div className= "char">
+			<div>{index + 0x1000}</div>
+			<div>{c}</div>
+			</div>
+		))}
 	</div>
 	</>
 	);
