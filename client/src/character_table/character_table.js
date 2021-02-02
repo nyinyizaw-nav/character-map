@@ -17,7 +17,7 @@ function PrintMmChar() {
 	<div className="chartable pyidaungsu">
 		{mmChar().map((c, index) => (
 			<div className= "char">
-			<div>{index + 0x1000}</div>
+			<div>{(index + 0x1000).toString(16)}</div>
 			<div>{c}</div>
 			</div>
 		))}
@@ -26,7 +26,7 @@ function PrintMmChar() {
 	<div className="chartable zawgyi">
 		{mmChar().map((c, index) => (
 			<div className= "char">
-			<div>{index + 0x1000}</div>
+			<div>{(index + 0x1000).toString(16)}</div>
 			<div>{c}</div>
 			</div>
 		))}
