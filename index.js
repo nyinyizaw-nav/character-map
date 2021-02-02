@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 let port = process.env.PORT;
 
@@ -8,8 +9,10 @@ if ( port == "" || port == undefined ) {
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, '/client/build')));
+
 app.get('/', (req, res) => {
-	res.send("<h2>Hello From the Express</h2>");
+	res.send(path.join(__dirname, '/client/build/index.html'));
 });
 
 app.listen(port, () => {
