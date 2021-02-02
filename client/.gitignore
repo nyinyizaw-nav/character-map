@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+/build
+.eslintcache
+
 
 # misc
 .DS_Store
