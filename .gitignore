@@ -7,8 +7,10 @@
 # testing
 coverage
 
-build
-.eslintcache
+client/build/
+node_modules/
+client/node_modules/
+*.eslintcache
 *.swp
 *.swo
 
