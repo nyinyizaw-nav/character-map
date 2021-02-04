@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/nyinyizaw-nav/character-map#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-uuid": "^1.0.2"
   }
 }

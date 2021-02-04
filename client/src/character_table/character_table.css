@@ -20,8 +20,12 @@
 	font-family: 'zawgyi';
 }
 
+h1 {
+	text-align: center;
+}
+
 h2 {
-	border: red 2px solid;
+	color: black;
 	text-align: center;
 }
 
@@ -37,6 +41,5 @@ h2 {
 .chartable {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 3em;
 }
 
