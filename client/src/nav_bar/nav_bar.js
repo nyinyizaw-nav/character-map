@@ -31,10 +31,10 @@ const NavBar = () => {
 			<h1>nnz</h1>
 		</div>
 		<ul className="nav-links">
-			<li key="1"><a href="#">Home</a></li>
-			<li key="2"><a href="#">Comparte</a></li>
-			<li key="3"><a href="#">Character</a></li>
-			<li key="4"><a href="#">About</a></li>
+			<li key="1"><a href="/home">Home</a></li>
+			<li key="2"><a href="/compare">Compare</a></li>
+			<li key="3"><a href="/charcter">Character</a></li>
+			<li key="4"><a href="/about">About</a></li>
 		</ul>
 		<div className="nav-start">
 			<div className="line1"></div>
