@@ -10,9 +10,10 @@ coverage
 client/build/
 node_modules/
 client/node_modules/
+*.eslintcache
 *.swp
 *.swo
-
+client/package-lock.json
 
 # misc
 .DS_Store
