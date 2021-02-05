@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PrintMmChar from './character_table/character_table.js';
 import NavBar from './nav_bar/nav_bar.js';
 
-ReactDOM.render(
-	<>
-	<NavBar />
-  	<PrintMmChar />
-	</>
-	,
-  	document.getElementById('root')
+function App() {
+	return (
+		<>
+		<Router>
+			<NavBar />
+			<Switch>
+				<Route path="/" exact component={
+						() => "Home Page"} />
+				<Route path="/home" exact component={
+						() => "Home Page"} />
+				<Route path="/compare" exact component={
+						() => "Compare Page"} />
+				<Route path="/character" exact component={
+						() => <PrintMmChar />} />
+				<Route path="/about" exact component={
+						() => "About Page"} />
+			</Switch>
+		</Router>
+		</>
+	)
+}
+
+ReactDOM.render(<App />,document.getElementById('root')
 );
