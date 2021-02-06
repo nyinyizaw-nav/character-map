@@ -1,5 +1,6 @@
 import './character_table.css'
 import uuid from 'react-uuid'
+import React from 'react';
 
 let mmChar = () => {
 	let arr = [];
@@ -10,12 +11,11 @@ let mmChar = () => {
 	return arr;
 }
 
+function PrintMmChar(props) {
 
-function PrintMmChar() {
 	return (
 	<>
-		<h2>Pyidaungsu Font</h2>
-	<div className="chartable pyidaungsu">
+	<div className={`chartable ${props.font}`} >
 		{mmChar().map((c, index) => (
 			<div className= "char" key={uuid()}>
 			<div>{(index + 0x1000).toString(16)}</div>
@@ -23,15 +23,6 @@ function PrintMmChar() {
 			</div>
 		))}
 	</div>	
-		<h2>ZawGyi Font</h2>
-	<div className="chartable zawgyi">
-		{mmChar().map((c, index) => (
-			<div className= "char" key={uuid()}>
-			<div>{(index + 0x1000).toString(16)}</div>
-			<div>{c}</div>
-			</div>
-		))}
-	</div>
 	</>
 	);
 }
