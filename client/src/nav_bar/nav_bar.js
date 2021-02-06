@@ -23,7 +23,13 @@ const NavBar = () => {
 				navStart.classList.toggle('toggle');
 			});
 
-		}); 
+		return (
+			()=> {
+			navStart.removeEventListener('click');	
+			}
+		);
+
+		}, []); 
 
 	return (
 	<>
