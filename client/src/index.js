@@ -10,7 +10,6 @@ function App() {
 		<>
 		<Router>
 			<NavBar />
-			<SearchBar />
 			<Switch>
 				<Route path="/" exact component={
 						() => "Home Page"} />
